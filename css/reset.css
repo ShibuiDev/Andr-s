@@ -1,0 +1,77 @@
+
+/*Suavizado en el scroll de anchors*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*Problemas generales*/
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+
+/*Evitar problemas con los anchor*/
+
+a{
+  display: block;
+}
+
+p a{
+  display: inline;
+}
+
+/*Evitar problemas con las imagenes y videos*/
+
+img, picture, video, iframe, figure{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/*Resetear los estilos de las etiquetas de texto*/
+
+h1, h2, h3, h4, h5, h6, p, b, i, span, strong, a, blockquote, u, em{
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+/*Evitar problemas con los formularios*/
+
+form, input, textarea, select, button, label{
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+/*Evitar problemas con las tablas*/
+
+table, tr, td{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Evitar problemas con los svg*/
+
+svg{
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/*Configurar tipografía de toda la web*/
+body{
+  min-height: 100vh;
+  font-size: 100%;
+}
