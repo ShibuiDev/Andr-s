@@ -1,10 +1,17 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+/*Var*/
 :root{
     --bg-body: #000007;
     --bg-nav: #000008;
     --color-white: #eee;
     --color-white2: #ddd;
+    --color-black: #000;
+    --bg-body2: #eee;
+    --bg-nav2: #eee;
     --shadow-blue: #00001a;
+    --primary-font: 'Libre Baskerville', serif;
 }
 body{
     background: var(--bg-body);
@@ -12,7 +19,6 @@ body{
 }
 .fixed{
     position: fixed;
-    height: 80%;
     width: 100%;
 }
 #main-nav{
@@ -56,6 +62,7 @@ body{
     color: var(--color-white2);
     letter-spacing: 2px;
     font-size: 1.4rem;
+    font-family: var(--primary-font);
     transition: all ease 1s;
 }
 .links li:hover{
@@ -82,7 +89,7 @@ body{
 }
 .hamburger span{
     display: block;
-    background: #eee;
+    background: var(--color-white2);
     height: 5px;
     width: 30px;
     margin: 5px auto;
@@ -110,6 +117,7 @@ body{
     min-height: 120vh;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .title{
@@ -140,7 +148,7 @@ body{
     .hamburger{
         display: block;
         position: absolute;
-        top: 45px;
+        top: 38%;
         right: 30px;
     }
     #main-nav{
@@ -150,6 +158,7 @@ body{
     }
     #main-nav img{
         width: 60%;
+        margin-bottom: 18px;
     }
     .links{
         position: absolute;
@@ -179,31 +188,69 @@ body{
 @media (max-width: 450px){
     #main-nav img{
         width: 80%;
+        margin-bottom: 18px;
+    }
+    .hamburger{
+        top: 35px;
     }
 }
 @media (max-width: 350px){
     #main-nav{
-        height: 8%;
+        height: 20%;
     }
     #main-nav img{
         width: 80%;
         height: 70%;
+        margin-bottom: 18px;
     }
     .hamburger span{
         display: block;
-        background: #eee;
+        background: var(--color-white2);
         height: 3px;
         width: 25px;
         margin: 5px auto;
         border-radius: 10px;
     }
     .hamburger{
-        top: 35px;
+        top: 40px;
+    }
+}
+@media (max-width: 280px){
+    .hamburger{
+        top: 30px;
     }
 }
 
+
 /*Animations*/
+
+
+
+.LtR{
+   animation: LtR 1s ease; 
+}
+.RtL{
+    animation: RtL 1s ease;
+}
 @keyframes ham{
     from{opacity:0;}
     to{opacity: 1;}
+}
+@keyframes LtR{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes RtL{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
