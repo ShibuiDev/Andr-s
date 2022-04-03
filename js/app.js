@@ -16,7 +16,6 @@ ham.addEventListener('click', ()=>{
 $(function () {
     $('.title').addClass('LtR');
     $('#main-nav img').addClass('LtR');
-    $('.links').addClass('RtL');
     $('.hamburger').addClass('RtL');
     $('footer').addClass('LtR');
     $('.fa-facebook').addClass('TtB');
