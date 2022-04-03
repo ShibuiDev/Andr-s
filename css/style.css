@@ -185,7 +185,7 @@ footer a:nth-child(5):hover{
     .hamburger{
         display: block;
         position: absolute;
-        top: 40px;
+        top: 35px;
         right: 30px;
     }
     #main-nav{
@@ -253,7 +253,7 @@ footer a:nth-child(5):hover{
         margin-bottom: 18px;
     }
     .hamburger{
-        top: 45px;
+        top: 35px;
     }
     footer{
         width: 80%;
@@ -279,7 +279,7 @@ footer a:nth-child(5):hover{
         border-radius: 10px;
     }
     .hamburger{
-        top: 45px;
+        top: 43px;
     }
     footer{
         width: 80%;
