@@ -3,7 +3,7 @@
 
 /*Var*/
 :root{
-    --bg-body: #000007;
+    --bg-body: #000000;
     --bg-nav: #000008;
     --color-white: #eee;
     --color-white2: #ddd;
@@ -15,22 +15,19 @@
 }
 body{
     background: var(--bg-body);
-    height: 200vh;
-}
-.fixed{
-    position: fixed;
-    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 #main-nav{
     display: flex;
     position: relative;
     justify-content: space-between;
     width: 100%;
-    height: 18%;
+    height: 18vh;
     align-items: center;
-    background: var(--bg-nav);
     color: var(--color-white);
     padding: 0 10px;
+    opacity: .8;
 }
 #main-nav img{
     width: 40%;
@@ -71,14 +68,6 @@ body{
 .links li a:hover{
     opacity: .7;
 }
-.nav-divider{
-    width: 100%;
-    height: 1px;
-    background: var(--color-white2);
-    box-shadow: 0 10px 20px var(--color-white),
-    0 10px 30px var(--color-white2);
-
-}
 .hamburger{
     display: none;
     cursor: pointer;
@@ -114,7 +103,7 @@ body{
 .f-banner{
     display: flex;
     height: auto;
-    min-height: 120vh;
+    min-height: 82vh;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -123,21 +112,54 @@ body{
 .title{
     color: var(--color-white);
     margin: 20px;
-    font-size: 4rem;
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 4.5rem;
+    background: linear-gradient(to left, #000, #111, #222, #333);
 }
 .art-1{
     width: 50%;
 }
 .art-2{
     width: 50%;
+    height: auto; 
+
 }
 
-
-
-
-
-
-
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 28%;
+    margin-right: auto;
+    height: 60px;
+    background: linear-gradient(to left, #000, #111, #222, #333);
+}
+footer a{
+    color: var(--color-white2);
+    font-size: 1.8rem;
+    transition: all .3s ease-in;
+}
+footer a:nth-child(1):hover{
+    transform: scale(1.3);
+    color: #0165E1;
+}
+footer a:nth-child(2):hover{
+    transform: scale(1.3);
+    color: #C13584;
+}
+footer a:nth-child(3):hover{
+    transform: scale(1.3);
+    color: #1D9BF0;
+}
+footer a:nth-child(4):hover{
+    transform: scale(1.3);
+    color: #FF0000;
+}
+footer a:nth-child(5):hover{
+    transform: scale(1.3);
+    color: #1ed760;
+}
 
 
 
@@ -145,6 +167,10 @@ body{
 /*Media*/
 
 @media (max-width: 768px){
+    body{
+        /* background: url(); */
+        /*CAMBIAR POR IMAGEN DE FONDO*/
+    }
     .hamburger{
         display: block;
         position: absolute;
@@ -183,6 +209,23 @@ body{
         display: flex;
         animation: ham 2s ease both;
     }
+    footer{
+        width: 80%;
+        margin: auto;
+        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+    }
+    .title{
+        text-align: center;
+        justify-content: center;
+        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+    }
+    .art-1{
+        width: 100%;
+
+    }
+    .art-2{
+        display: none;
+    }
 
 }
 @media (max-width: 450px){
@@ -192,6 +235,11 @@ body{
     }
     .hamburger{
         top: 35px;
+    }
+    footer{
+        width: 80%;
+        margin: auto;
+        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
     }
 }
 @media (max-width: 350px){
@@ -214,6 +262,11 @@ body{
     .hamburger{
         top: 40px;
     }
+    footer{
+        width: 80%;
+        margin: auto;
+        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+    }
 }
 @media (max-width: 280px){
     .hamburger{
@@ -232,6 +285,12 @@ body{
 .RtL{
     animation: RtL 1s ease;
 }
+.TtB{
+    animation: TtB 1s ease;
+}
+.BtT{
+    animation: BtT 1s ease;
+}
 @keyframes ham{
     from{opacity:0;}
     to{opacity: 1;}
@@ -249,6 +308,24 @@ body{
     0%{
         opacity: 0;
         transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes TtB{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes BtT{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
     }
     100%{
         opacity: 1;
