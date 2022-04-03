@@ -212,6 +212,7 @@ footer a:nth-child(5):hover{
         align-items: flex-start;
         justify-content: center;
         padding-top: 20px;
+        background: #000;
     }
     #main-nav img{
         width: 60%;
