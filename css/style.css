@@ -3,15 +3,10 @@
 
 /*Var*/
 :root{
-    --bg-body: #000000;
-    --bg-nav: #000008;
     --color-white: #eee;
     --color-white2: #ddd;
     --color-black: #000;
-    --bg-body2: #eee;
-    --bg-nav2: #eee;
-    --shadow-blue: #00001a;
-    --primary-font: 'Libre Baskerville', serif;
+    --primary-font: 'Ramaraja', serif;
 }
 body{
     background: no-repeat 50% 50% url(../img/bg-.jpg);
@@ -115,9 +110,9 @@ body{
 .title{
     color: var(--color-white);
     margin: 0 auto;
-    padding-left: 10px;
-    font-size: 3.4rem;
+    font-size: 3rem;
     text-align: center;
+    font-family: var(--primary-font);
 }
 .art-1{
     display: flex;
@@ -134,17 +129,17 @@ body{
     filter: drop-shadow(5px 5px 10px #ffffff);
 }
 .art-1 p{
-    font-size: 1.5rem;
-    margin: 10px auto;
+    font-size: 1.2rem;
+    margin: 5px auto;
     text-align: center;
     color: var(--color-white2);
+    font-family: var(--primary-font);
 }
 .art-2{
     display: flex;
     width: 60%;
     height: 82vh; 
 
-    z-index: 99;
 }
 .art-2 img{
     height: 100%;
@@ -166,7 +161,7 @@ footer{
     width: 80%;
     margin-right: auto;
     padding: 10px;
-    margin: 30px;
+    margin: 15px;
     height: 60px;
 }
 footer a{
@@ -204,7 +199,7 @@ footer a:nth-child(5):hover{
     .hamburger{
         display: block;
         position: absolute;
-        top: 38%;
+        top: 35%;
         right: 30px;
     }
     #main-nav{
@@ -215,7 +210,6 @@ footer a:nth-child(5):hover{
     }
     #main-nav img{
         width: 60%;
-        margin-bottom: 18px;
     }
     .links{
         position: absolute;
@@ -276,7 +270,7 @@ footer a:nth-child(5):hover{
         width: 80%;
     }
     .hamburger{
-        top: 40px;
+        top: 35%;
     }
     footer{
         width: 80%;
@@ -301,7 +295,7 @@ footer a:nth-child(5):hover{
         border-radius: 10px;
     }
     .hamburger{
-        top: 50px;
+        top: 40%;
     }
     footer{
         width: 80%;
@@ -317,7 +311,7 @@ footer a:nth-child(5):hover{
 }
 @media (max-width: 280px){
     .hamburger{
-        top: 30px;
+        top: 40%;
     }
 }
 
