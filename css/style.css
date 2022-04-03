@@ -283,7 +283,7 @@ footer a:nth-child(5):hover{
     }
     footer{
         width: 80%;
-        margin: auto;
+        margin: 80px auto;
         background: transparent;
     }
     .br-1.animate{
