@@ -14,9 +14,12 @@
     --primary-font: 'Libre Baskerville', serif;
 }
 body{
-    background: var(--bg-body);
+    background: no-repeat 50% 50% url(../img/bg-.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     overflow: hidden;
+    backdrop-filter: brightness(40%);
 }
 #main-nav{
     display: flex;
@@ -31,7 +34,7 @@ body{
 #main-nav img{
     padding: 5px;
     width: 40%;
-    height: 80%;
+    height: 90%;
     cursor: pointer;
     transition: all ease 1s;
 }
@@ -49,7 +52,6 @@ body{
     position: relative;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #000;
 }
 .links li{
     list-style-type: none;
@@ -112,30 +114,42 @@ body{
 
 .title{
     color: var(--color-white);
-    margin: 20px;
-    margin-left: 0;
+    margin: 0 auto;
     padding-left: 10px;
-    font-size: 4.5rem;
-    background: linear-gradient(to left, #000, #111, #222, #333);
+    font-size: 3.4rem;
+    text-align: center;
 }
 .art-1{
     display: flex;
-    align-items: space-around;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
     width: 40%;
     height: 82vh;
 }
+.art-1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px #ffffff);
+}
+.art-1 p{
+    font-size: 1.5rem;
+    margin: 10px auto;
+    text-align: center;
+    color: var(--color-white2);
+}
 .art-2{
     display: flex;
     width: 60%;
-    height: 82vh;
+    height: 82vh; 
+
     z-index: 99;
 }
 .art-2 img{
-    height: 100vh;
-    width: 100vw;
-    filter: grayscale(60%) drop-shadow(5px 5px 14px #666);
+    height: 100%;
+    width: 100%;
+    filter: grayscale(50%) drop-shadow(5px 5px 14px #666);
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -151,8 +165,9 @@ footer{
     align-items: center;
     width: 80%;
     margin-right: auto;
+    padding: 10px;
+    margin: 30px;
     height: 60px;
-    background: linear-gradient(to left, #000, #111, #222, #333);
 }
 footer a{
     color: var(--color-white2);
@@ -186,16 +201,10 @@ footer a:nth-child(5):hover{
 /*Media*/
 
 @media (max-width: 868px){
-    body{
-        background: no-repeat 50% 50% url(../img/DSC_0338-min.JPG);
-        background-size: cover;
-	background-position: center;
-        backdrop-filter: blur(2px) grayscale(80%);
-    }
     .hamburger{
         display: block;
         position: absolute;
-        top: 35px;
+        top: 38%;
         right: 30px;
     }
     #main-nav{
@@ -203,7 +212,6 @@ footer a:nth-child(5):hover{
         align-items: flex-start;
         justify-content: center;
         padding-top: 20px;
-        background: #000;
     }
     #main-nav img{
         width: 60%;
@@ -236,38 +244,41 @@ footer a:nth-child(5):hover{
         width: 80%;
         margin: auto;
         background: transparent;
-        margin: 80px auto;
-    }
-    footer a{
-        color: var(--color-black);
+        margin: 10px auto;
     }
     .title{
         text-align: center;
         justify-content: center;
         background: transparent;
-        margin: auto;
-        color: var(--color-black);
+        margin: 15px auto;
     }
     .art-1{
         width: 100%;
 
     }
+    .art-1 p{
+        margin: 10px auto;
+    }
     .art-2{
         display: none;
     }
-
+    .art-1 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 10px #ffffff);
+    }
 }
 @media (max-width: 450px){
     #main-nav img{
         width: 80%;
-        margin-bottom: 18px;
     }
     .hamburger{
         top: 35px;
     }
     footer{
         width: 80%;
-        margin: auto;
+        margin: 10px auto;
         background: transparent;
     }
 }
@@ -278,7 +289,6 @@ footer a:nth-child(5):hover{
     #main-nav img{
         width: 70%;
         height: 80%;
-        margin-bottom: 18px;
     }
     .hamburger span{
         display: block;
@@ -289,11 +299,11 @@ footer a:nth-child(5):hover{
         border-radius: 10px;
     }
     .hamburger{
-        top: 43px;
+        top: 45px;
     }
     footer{
         width: 80%;
-        margin: 80px auto;
+        margin: 10px auto;
         background: transparent;
     }
     .br-1.animate{
@@ -305,7 +315,7 @@ footer a:nth-child(5):hover{
 }
 @media (max-width: 280px){
     .hamburger{
-        top: 50px;
+        top: 30px;
     }
 }
 
