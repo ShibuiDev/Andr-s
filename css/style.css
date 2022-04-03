@@ -119,16 +119,26 @@ body{
     background: linear-gradient(to left, #000, #111, #222, #333);
 }
 .art-1{
-    width: 45%;
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 82vh;
 }
 .art-2{
-    width: 55%;
-    height: auto; 
+    display: flex;
+    width: 60%;
+    height: 82vh;
+    z-index: 99;
 }
 .art-2 img{
     height: 100vh;
     width: 100vw;
     filter: grayscale(60%) drop-shadow(5px 5px 14px #666);
+    background: transparent;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -175,11 +185,11 @@ footer a:nth-child(5):hover{
 
 /*Media*/
 
-@media (max-width: 768px){
+@media (max-width: 868px){
     body{
         background: no-repeat 50% 50% url(../img/DSC_0338-min.JPG);
         background-size: cover;
-	    background-position: center;
+	background-position: center;
         backdrop-filter: blur(2px) grayscale(80%);
     }
     .hamburger{
