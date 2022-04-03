@@ -29,8 +29,9 @@ body{
     padding: 0 10px;
 }
 #main-nav img{
+    padding: 5px;
     width: 40%;
-    height: 100%;
+    height: 80%;
     cursor: pointer;
     transition: all ease 1s;
 }
@@ -118,19 +119,27 @@ body{
     background: linear-gradient(to left, #000, #111, #222, #333);
 }
 .art-1{
-    width: 50%;
+    width: 45%;
 }
 .art-2{
-    width: 50%;
+    width: 55%;
     height: auto; 
-
 }
+.art-2 img{
+    height: 100vh;
+    width: 100vw;
+    filter: grayscale(80%) drop-shadow(5px 5px 14px #666);
+}
+
+
+
+
 
 footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 28%;
+    width: 80%;
     margin-right: auto;
     height: 60px;
     background: linear-gradient(to left, #000, #111, #222, #333);
@@ -168,8 +177,10 @@ footer a:nth-child(5):hover{
 
 @media (max-width: 768px){
     body{
-        /* background: url(); */
-        /*CAMBIAR POR IMAGEN DE FONDO*/
+        background: no-repeat 50% 50% url(../img/DSC_0338-min.JPG);
+        background-size: cover;
+	    background-position: center;
+        backdrop-filter: blur(2px) grayscale(80%);
     }
     .hamburger{
         display: block;
@@ -180,7 +191,9 @@ footer a:nth-child(5):hover{
     #main-nav{
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
         padding-top: 20px;
+        background: #000;
     }
     #main-nav img{
         width: 60%;
@@ -212,12 +225,18 @@ footer a:nth-child(5):hover{
     footer{
         width: 80%;
         margin: auto;
-        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+        background: transparent;
+        margin: 80px auto;
+    }
+    footer a{
+        color: var(--color-black);
     }
     .title{
         text-align: center;
         justify-content: center;
-        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+        background: transparent;
+        margin: auto;
+        color: var(--color-black);
     }
     .art-1{
         width: 100%;
@@ -239,7 +258,7 @@ footer a:nth-child(5):hover{
     footer{
         width: 80%;
         margin: auto;
-        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+        background: transparent;
     }
 }
 @media (max-width: 350px){
@@ -247,8 +266,8 @@ footer a:nth-child(5):hover{
         height: 20%;
     }
     #main-nav img{
-        width: 80%;
-        height: 100%;
+        width: 70%;
+        height: 80%;
         margin-bottom: 18px;
     }
     .hamburger span{
@@ -260,12 +279,12 @@ footer a:nth-child(5):hover{
         border-radius: 10px;
     }
     .hamburger{
-        top: 50px;
+        top: 45px;
     }
     footer{
         width: 80%;
         margin: auto;
-        background: linear-gradient(to left, #000, #111, #222, #333, #222, #111, #000);
+        background: transparent;
     }
     .br-1.animate{
         transform: rotate(-45deg) translate(-5px, 6px) scale(1.3);
