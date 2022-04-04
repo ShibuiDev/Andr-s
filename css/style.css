@@ -226,6 +226,11 @@ footer a:nth-child(5):hover{
     width: 100%;
     height: 40vh;
 }
+.photos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
 
 
 
