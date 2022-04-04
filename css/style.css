@@ -192,6 +192,55 @@ footer a:nth-child(5):hover{
 
 
 
+
+/*-------SOCIAL---------*/
+
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+}
+.desc h1{
+    color: var(--color-white);
+    margin: 0 auto;
+    font-size: 3.6rem;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+.desc p{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white2);
+    font-family: var(--primary-font);
+}
+.photos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(1, 1, 1, 60%);
+    width: 100%;
+    height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Media*/
 
 @media (max-width: 868px){
