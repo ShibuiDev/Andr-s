@@ -8,10 +8,11 @@
     --primary-font: 'Ramaraja', serif;
 }
 body{
-    background: no-repeat 50% 50% url(../img/Background-min.jpg);
+    background: no-repeat url(../img/Background-min.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 #main-nav{
@@ -29,7 +30,7 @@ body{
 #main-nav img{
     padding: 5px;
     width: 40%;
-    height: 90%;
+    height: 100%;
     cursor: pointer;
     transition: all ease 1s;
 }
@@ -207,7 +208,14 @@ footer a:nth-child(5):hover{
 
 
 
-/*-------SOCIAL---------*/
+/*------------------SOCIAL----------------------*/
+
+
+
+
+
+
+
 
 .desc{
     display: flex;
@@ -247,6 +255,14 @@ footer a:nth-child(5):hover{
     height: 200px;
     border-radius: 10px;
 }
+
+
+
+
+
+
+
+
 
 
 /*---------------MUSIC------------*/
@@ -330,6 +346,8 @@ footer a:nth-child(5):hover{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    height: auto;
+    align-items: center;
     margin: 10px auto;
     font-size: 1rem;
     color: var(--color-white);
@@ -343,7 +361,21 @@ footer a:nth-child(5):hover{
 
 
 
-/*Media*/
+
+
+
+    /*----Overflow control----*/
+
+
+    .no-overflow{
+        overflow-y: hidden;
+    }    
+    .overflow{
+        overflow-y: auto;
+    }
+
+
+/*---------------------Media--------------------*/
 
 @media (max-width: 868px){
     .hamburger{
@@ -357,10 +389,14 @@ footer a:nth-child(5):hover{
         align-items: flex-start;
         justify-content: center;
         padding-top: 20px;
-
+        width: 100%;
     }
     #main-nav img{
         width: 60%;
+        height: 100%;
+    }
+    .divider{
+        width: 100%;
     }
     .links{
         position: absolute;
@@ -375,7 +411,7 @@ footer a:nth-child(5):hover{
         width: 100%;
         display: none;
         opacity: 0;
-        background-color: rgba(1, 1, 1, 95%);
+        background-color: rgba(12, 22, 1, 0.95);
         z-index: 99;
     }
     .links li{
@@ -431,9 +467,48 @@ footer a:nth-child(5):hover{
         text-align: center;
         color: var(--color-white2);
         font-family: var(--primary-font);
+    }    
+    .art-1 span{
+        font-size: .8rem;
     }
-    .no-overflow{
-        overflow-y: hidden;
+
+
+
+
+
+    /*----MUSIC MEDIA--------*/
+    .music-i iframe{
+        width: 90%;
+    }
+
+    .music-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+    }
+    .music-img img{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+    .music_info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .title-{
+        font-size: 2.4rem;
+        height: 60px;
+    }
+    .buttons{
+        width: 40%;
+    }
+    .footer_info{
+        font-size: .8rem;
+    }
+    .footer_info p{
+        margin: 0 10px;
     }
 }
 @media (max-width: 450px){
@@ -447,6 +522,14 @@ footer a:nth-child(5):hover{
         width: 80%;
         margin: 10px auto;
         background: transparent;
+    }
+
+    /*----MUSIC*/
+    .music-i iframe{
+        height: 40vh;
+    }
+    .music-i h2{
+        font-size: 2.4rem;
     }
 }
 @media (max-width: 350px){
@@ -485,7 +568,17 @@ footer a:nth-child(5):hover{
         top: 40%;
     }
 }
+/*Media Heights*/
 
+@media (max-height: 598px){
+
+    .title{
+        margin: 0 auto;
+    }
+    footer{
+        margin: 0 auto;
+    }
+}
 
 /*Animations*/
 
