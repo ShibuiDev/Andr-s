@@ -8,22 +8,23 @@
     --primary-font: 'Ramaraja', serif;
 }
 body{
-    background: no-repeat 50% 50% url(../img/bg-.jpg);
+    background: no-repeat 50% 50% url(../img/Background-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     overflow: hidden;
-    backdrop-filter: brightness(40%);
 }
 #main-nav{
     display: flex;
     position: relative;
     justify-content: space-between;
-    width: 100%;
-    height: 18vh;
+    width: 90%;
+    margin: 0 auto;
+    height: 16vh;
     align-items: center;
     color: var(--color-white);
     padding: 0 10px;
+
 }
 #main-nav img{
     padding: 5px;
@@ -36,7 +37,12 @@ body{
     opacity: .7;
     transform: scale(.9);
 }
-
+.divider{
+    width: 90%;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+}
 .navigation{
     width: 90%;
     margin: 0 auto;
@@ -108,8 +114,8 @@ body{
 
 .title{
     color: var(--color-white);
-    margin: 0 auto;
-    font-size: 2.6rem;
+    margin: 10px auto;
+    font-size: 2.8rem;
     text-align: center;
     font-family: var(--primary-font);
     height: 50px;
@@ -125,10 +131,11 @@ body{
 }
 .art-1 img{
     margin-top: 30px;
+    margin-bottom: 10px;
     width: 250px;
     height: 250px;
     border-radius: 10px;
-    filter: drop-shadow(5px 5px 10px #ffffff);
+    filter: drop-shadow(0px 0px 8px #ffffff);
 }
 .art-1 p{
     font-size: 1.2rem;
@@ -136,6 +143,10 @@ body{
     text-align: center;
     color: var(--color-white2);
     font-family: var(--primary-font);
+}
+.art-1 span{
+    color: #fff;
+    margin-top: 5px;
 }
 .art-2{
     display: flex;
@@ -146,7 +157,7 @@ body{
 .art-2 img{
     height: 100%;
     width: 100%;
-    filter: grayscale(50%) drop-shadow(5px 5px 14px #666);
+    filter: grayscale(50%) drop-shadow(5px 5px 14px #a76577);
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -163,7 +174,7 @@ footer{
     width: 80%;
     margin-right: auto;
     padding: 10px;
-    margin: 15px;
+    margin: 10px;
     height: 60px;
 }
 footer a{
@@ -238,10 +249,91 @@ footer a:nth-child(5):hover{
 }
 
 
+/*---------------MUSIC------------*/
 
-
-
-
+.sec_music{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
+}
+.music-i{
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.music-i iframe{
+    height: 60vh;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px dashed #742133;
+}
+.music-i h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-white);
+    margin: 10px auto;
+}
+.music-img{
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.music-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 8px #ffffff);
+}
+.buttons{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.buttons a{
+    color: var(--color-white2);
+    font-size: 2rem;
+    transition: all .3s ease-in;
+}
+.buttons a:nth-child(1):hover{
+    transform: scale(1.3);
+    color: #FF0000;
+}
+.buttons a:nth-child(2):hover{
+    transform: scale(1.3);
+    color: #1ed760;
+}
+.music_info{
+    width: 50%;
+    margin: 20px 0;
+    color: #fff;
+    font-family: var(--primary-font);
+}
+.title-{
+    font-size: 3rem;
+    height: 70px;
+}
+.music_info span{
+    font-size: 1.5rem;
+}
+.footer_info{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: var(--color-white);
+}
 
 
 
@@ -339,15 +431,6 @@ footer a:nth-child(5):hover{
         text-align: center;
         color: var(--color-white2);
         font-family: var(--primary-font);
-    }
-    .body{
-        overflow-y: auto;
-        background: no-repeat 50% 50% url(../img/bg-.jpg);
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        height: auto;
-        backdrop-filter: brightness(40%);
     }
     .no-overflow{
         overflow-y: hidden;
