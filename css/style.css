@@ -572,7 +572,9 @@ footer a:nth-child(5):hover{
 /*Media Heights*/
 
 @media (max-height: 598px){
-
+    #main-nav{
+    height: 22vh;
+    }
     .title{
         margin: 0 auto;
         font-size: 2rem;
