@@ -377,6 +377,7 @@ footer a:nth-child(5):hover{
     #main-nav img{
         width: 60%;
         height: 100%;
+        z-index: 10000;
     }
     .divider{
         width: 100%;
