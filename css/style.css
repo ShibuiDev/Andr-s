@@ -26,6 +26,7 @@ body{
     color: var(--color-white);
     padding: 0 10px;
     font-family: 'Poppins', sans-serif;
+    z-index: 1000;
     
 }
 #main-nav img{
@@ -382,7 +383,7 @@ footer a:nth-child(5):hover{
     }
     .links{
         position: absolute;
-        top: 100px;
+        top: 130px;
         right: 0;
         flex-direction: column;
         align-items: center;
@@ -394,7 +395,7 @@ footer a:nth-child(5):hover{
         display: none;
         opacity: 0;
         background-color: rgba(12, 22, 1, 0.95);
-        z-index: 99;
+        z-index: 60;
     }
     .links li{
         width: 100%;
@@ -404,6 +405,7 @@ footer a:nth-child(5):hover{
     .active{
         display: flex;
         animation: ham 2s ease both;
+        background:  rgba(12, 22, 1, 0.95);
     }
     footer{
         width: 80%;
@@ -494,6 +496,9 @@ footer a:nth-child(5):hover{
 @media (max-width: 450px){
     #main-nav img{
         width: 80%;
+    }
+    .links{
+        top: 100px;
     }
     .hamburger{
         top: 35%;
