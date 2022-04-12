@@ -451,7 +451,6 @@ footer a:nth-child(5):hover{
         margin: 10px auto;
         text-align: center;
         color: var(--color-white2);
-        font-family: 'Rock Salt', cursive;
     }    
     .art-1 span{
         font-size: .8rem;
