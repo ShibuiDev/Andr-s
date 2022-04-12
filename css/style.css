@@ -383,7 +383,7 @@ footer a:nth-child(5):hover{
     }
     .links{
         position: absolute;
-        top: 130px;
+        top: 16vh;
         right: 0;
         flex-direction: column;
         align-items: center;
@@ -498,7 +498,7 @@ footer a:nth-child(5):hover{
         width: 80%;
     }
     .links{
-        top: 150px;
+        top: 16vh;
     }
     .hamburger{
         top: 35%;
