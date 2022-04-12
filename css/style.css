@@ -34,6 +34,7 @@ body{
     width: 40%;
     height: 100%;
     cursor: pointer;
+    z-index: 10000;
     transition: all ease 1s;
 }
 #main-nav img:hover{
@@ -377,7 +378,6 @@ footer a:nth-child(5):hover{
     #main-nav img{
         width: 60%;
         height: 100%;
-        z-index: 10000;
     }
     .divider{
         width: 100%;
