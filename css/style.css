@@ -272,6 +272,9 @@ footer a:nth-child(5):hover{
 /*---------------------------MUSIC--------------------*/
 
 .sec_music{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 95%;
     margin: 0 auto;
     min-height: 100vh;
@@ -307,13 +310,13 @@ footer a:nth-child(5):hover{
     display: flex;
     width: 90%;
     margin: 0 auto;
-    justify-content: space-around;
     align-items: center;
 }
 .music-img img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
+    margin-right: 30px;
     filter: drop-shadow(0px 0px 8px #ffffff);
 }
 .buttons{
